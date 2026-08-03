@@ -150,6 +150,143 @@ footer{
 img{ border-radius: 150px;
     margin-top: 90px;
 }
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a{
+        margin: 0;
+    }
+
+    .hero{
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero h1{
+        font-size: 40px;
+    }
+
+    .hero h2{
+        font-size: 24px;
+    }
+
+}
+
+/* Mobile Phones */
+@media (max-width: 600px){
+
+    header{
+        padding: 20px;
+    }
+
+    .logo{
+        font-size: 24px;
+    }
+nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+    .hero{
+        padding: 40px 15px;
+    }
+
+    .hero h1{
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .hero h2{
+        font-size: 20px;
+    }
+
+    .hero p{
+        font-size: 15px;
+    }
+
+    .pho-to{
+        width: 180px;
+        margin-top: 20px;
+        border-radius: 50%;
+    }
+
+    h3{
+        font-size: 28px;
+    }
+
+    .btn{
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+
+    section{
+        padding: 60px 20px;
+    }
+
+    .services,
+    .skills{
+        grid-template-columns: 1fr;
+    }
+
+    .card,
+    .skill{
+        width: 100%;
+    }
+
+    footer{
+        font-size: 14px;
+    }
+    .pho-to{
+    width:300px;
+    max-width:100%;
+    height:auto;
+    border-radius:50%;
+    margin-top:40px;
+}
+
+.bank-base{
+    width:350px;
+    max-width:100%;
+    height:auto;
+    border-radius:10px; /* Square corners */
+    margin-top:20px;
+    margin-left:10px;
+    margin-top: 5px;
+}
+.data-base{
+    width:350px;
+    max-width:100%;
+    height:auto;
+    border-radius:10px; /* Square corners */
+    margin-top:20px;
+    margin-left:10px;
+    margin-top: 5px;
+}
+
+
+
+
 </style>
 
 </head>
@@ -172,7 +309,7 @@ img{ border-radius: 150px;
 <section class="hero">
 
 <div>
-<img src="myphoto.png" width="300px" alt="my photo"> 
+<img class="pho-to" src="myphoto.png" width="300px" alt="my photo"> 
 
 <h1>Hi, I'm Chinedu Destiny</h1>
 
@@ -208,6 +345,7 @@ I am a passionate Full-Stack Developer and Data Analyst dedicated to building se
 <h4>Web Development</h4>
 <p>Professional business websites and web applications.</p>
 </div>
+<img class="bank-base"  src="bankbase.png" width="500px" >
 
 <div class="card">
 <h4>Frontend Development</h4>
@@ -224,8 +362,9 @@ I am a passionate Full-Stack Developer and Data Analyst dedicated to building se
 <p>Business reports, dashboards and data visualization.</p>
 </div>
 
-</div>
+<img class="data-base"  src="database.png" width="300" alt="database photo"> 
 
+</div>
 </section>
 
 <section id="skills">
